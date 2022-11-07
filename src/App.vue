@@ -7,11 +7,13 @@ const comp = ref(ComponentA)
 </script>
 
 <template>
-  <button @click="comp = ComponentA">ComponentA</button>
-  <button @click="comp = ComponentB">ComponentB</button>
-  <keep-alive>
-    <component :is="comp" />
-  </keep-alive>
+  <div>
+    <button @click="comp = ComponentA">ComponentA</button>
+    <button @click="comp = ComponentB">ComponentB</button>
+    <keep-alive>
+      <component :is="comp" />
+    </keep-alive>
+  </div>
 </template>
 
 <style scoped>
